@@ -4,7 +4,8 @@ const reservationDB = require("../models/reservation.model.js");
 require('dotenv').config()
 
 // stripe controller & payment process
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY || "test_key");
+
 
 exports.getStripePublishableKey = async (req, res) => {
     res.send({
