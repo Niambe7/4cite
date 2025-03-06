@@ -1,17 +1,16 @@
 const express = require("express");
-const mongoose = require("mongoose")
-const cors = require("cors")
+const mongoose = require("mongoose");
+const cors = require("cors");
 
-const auth = require("./routes/auth.js")
-const house = require("./routes/house.js")
-const reservations = require("./routes/reservations.js")
+const auth = require("./routes/auth.js");
+const house = require("./routes/house.js");
+const reservations = require("./routes/reservations.js");
 
-require('dotenv').config();
-
+require("dotenv").config();
 
 const app = express();
 
-// parse Data
+// Parse Data
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -19,25 +18,29 @@ app.use(express.urlencoded({ extended: true }));
 // Use routes
 app.use("/auth", auth);
 app.use("/house", house);
-app.use("/reservations", reservations)
+app.use("/reservations", reservations);
 
+let server; // Déclaration globale du serveur
 
 async function main() {
-    await mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tkzvadc.mongodb.net/motel-develpoment-db`)
     try {
-        app.listen(process.env.PORT, () => {
-            console.log(`Server is running on port ${process.env.PORT}`)
-        })
-        console.log('MongoDB connected By Mongo Client Sk Miraj!')
+        await mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tkzvadc.mongodb.net/motel-develpoment-db`);
+        
+        if (process.env.NODE_ENV !== "test") {
+            server = app.listen(process.env.PORT, () => {
+                console.log('✅ MongoDB connecté');
+                console.log(`✅ Serveur démarré sur le port ${process.env.PORT}`);
+            });
+        }
     } catch (err) {
-        console.log(err)
+        console.error("❌ Erreur de connexion à MongoDB :", err);
     }
 }
 
-app.get('/',(req,res)=>{
-    res.send(` Hello Express is server Working on ${process.env.PORT}`);
-})
+app.get("/", (req, res) => {
+    res.send(`Hello Express ! Le serveur fonctionne sur le port ${process.env.PORT}`);
+});
 
 main();
 
-module.exports = app;
+module.exports = { app, server };
