@@ -27,6 +27,10 @@ jobs:
           cd backend
           npm install
 
+      - name: Set environment variables
+        run: |
+          echo "STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}" >> $GITHUB_ENV    
+
       - name: Run backend tests
         run: |
           cd backend
