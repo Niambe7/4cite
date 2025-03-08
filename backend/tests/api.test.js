@@ -1,6 +1,6 @@
 const request = require("supertest");
 const mongoose = require("mongoose");
-const { app } = require("../api"); // On n'importe que `app`, pas `server`
+const { app } = require("../api"); // On n'importe PAS `server`, on démarre un serveur pour Jest
 
 let server;
 
@@ -12,14 +12,13 @@ beforeAll((done) => {
 });
 
 afterAll(async () => {
-    await mongoose.connection.close(); // Ferme MongoDB proprement
     if (server) {
-        server.close(() => {
-            console.log("🛑 Test Server stopped");
-        });
+        await new Promise((resolve) => server.close(resolve)); // Ferme proprement le serveur
+        console.log("🛑 Test Server stopped");
     }
+    await mongoose.connection.close(); // Ferme proprement la connexion MongoDB
 });
-
+  
 describe("Test API Node.js", () => {
     it("Doit retourner 200 pour la route principale", async () => {
         const res = await request(server).get("/");
