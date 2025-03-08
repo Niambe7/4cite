@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node api.js",
+    "start": "cross-env NODE_ENV=production node api.js",
     "dev": "nodemon api.js",
     "test": "cross-env NODE_ENV=test jest --detectOpenHandles"
   },
