@@ -27,7 +27,8 @@ import { GiTennisCourt, GiSkier } from "react-icons/gi";
 export const categoryApi = [
     { id: 1, name: "House", svg: PiHouseLine },
     { id: 2, name: "Apartment", svg: MdOutlineApartment },
-    { id: 3, name: "Tree house", svg: GiTreehouse },
+    { id: 3, name: "Hotel", svg: LiaHotelSolid },
+    /*{ id: 3, name: "Tree house", svg: GiTreehouse },
     { id: 4, name: "Boat", svg: TbSailboat2 },
     { id: 5, name: "Cabin", svg: MdOutlineCabin },
     { id: 6, name: "Camper", svg: TbCamper },
@@ -43,5 +44,5 @@ export const categoryApi = [
     { id: 16, name: "Grill", svg: MdOutlineOutdoorGrill },
     { id: 17, name: "Campfire", svg: PiCampfireLight },
     { id: 19, name: "Tennis court", svg: GiTennisCourt },
-    { id: 20, name: "Ski in/ Ski out", svg: GiSkier },
+    { id: 20, name: "Ski in/ Ski out", svg: GiSkier },*/
 ]

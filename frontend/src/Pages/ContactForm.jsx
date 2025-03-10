@@ -16,7 +16,7 @@ export const ContactUs = () => {
         // Send email to the admin
         emailjs
             .send('service_pifdyyh', 'template_8e0ov6p', {
-                user_email: 'skmirajulislam181@gmail.com', // Admin email
+                user_email: 'akkorhotel@gmail.com', // Admin email
                 message: `Query from ${clientName}: ${form.current['message'].value}`,
             }, { publicKey: 'W7JLonZhnMYOR4Vb7' })
             .then(() => {
@@ -35,7 +35,7 @@ export const ContactUs = () => {
                 <div className="row">
                     <div className="contact-left">
                         <h1 className="sub-title">Contact Us</h1>
-                        <p>skmirajulislam181@gmail.com</p>
+                        <p>akkorhotel@gmail.com</p>
                     </div>
                     <div className="contact-right">
                         <form ref={form} onSubmit={sendEmail}>

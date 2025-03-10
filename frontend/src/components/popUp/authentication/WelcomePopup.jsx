@@ -113,7 +113,7 @@ const WelcomePopup = ({
       {/* welcome option */}
       <div className="px-8 pt-4">
         <h2 className="font-medium text-[22px] text-[#222222]">
-          Welcome to Motel
+          Welcome to Akkor
         </h2>
         <form onSubmit={handleSubmit(handleCheckEmail)}>
           <input
@@ -131,14 +131,14 @@ const WelcomePopup = ({
           />
           <div className=" pt-4 px-8 italic">
             <ul className=" list-disc text-xs text-[#222222] opacity-80">
-              <p>You can use below test credentials to login!</p>
-              <li>email: guest@email.com</li>
+              {/* <p>You can use below test credentials to login!</p> */}
+              {<li>email: guest@email.com</li> }
             </ul>
           </div>
-          <p className=" text-xs text-[#222222] pt-3 mb-5 opacity-80 ml-[2px]">
+          {/* <p className=" text-xs text-[#222222] pt-3 mb-5 opacity-80 ml-[2px]">
             We’ll send a confirmation email to verify your email address. <br />{" "}
             <Link className=" font-semibold underline">Privacy Policy</Link>
-          </p>
+          </p> */}
           <button
             className={`bg-[#ff385c] hover:bg-[#d90b63] transition-all duration-300 text-white font-medium rounded-lg p-3 w-full disabled:bg-[#dddddd] ${
               isLoading ? " cursor-not-allowed" : ""
