@@ -84,7 +84,7 @@ const Navbar = () => {
             />
             {/* if user is in hosting homes page we want only logo */}
             {inHostHomesLandingPage || isSmallDevice ? null : (
-              <p className="text-xl text-[#ff385c] font-bold">Journey Cuisine</p>
+              <p className="text-xl text-[#ff385c] font-bold">Hotel Akkor</p>
             )}
           </span>
         </div>

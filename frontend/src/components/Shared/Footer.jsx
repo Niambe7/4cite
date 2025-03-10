@@ -15,7 +15,7 @@ const Footer = () => {
           <a href="https://journey-support.vercel.app">
             <p>Get help with a safety issue</p>
           </a>
-          <a href="https://journey-support.vercel.app">
+          {/* <a href="https://journey-support.vercel.app">
             <p>MotelCover</p>
           </a>
           <a href="https://journey-support.vercel.app">
@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
           <a href="https://journey-support.vercel.app">
             <p>Report a neighborhood concern</p>
-          </a>
+          </a> */}
         </div>
         <div className="flex flex-col gap-4 opacity-80">
           <h6 className="font-semibold">Community</h6>
@@ -48,7 +48,7 @@ const Footer = () => {
 <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
     <p>MotelCover for Hosts</p>
 </a>
-<a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
+{/* <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
     <p>Explore hosting resources</p>
 </a>
 <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
@@ -59,7 +59,7 @@ const Footer = () => {
 </a>
 <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
     <p>Motel friendly apartments</p>
-</a>
+</a> */}
         </div>
         <div className="flex flex-col gap-4 opacity-80">
           <h6 className="font-semibold">Motel</h6>
@@ -67,7 +67,7 @@ const Footer = () => {
           <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
     <p>MotelCover for Hosts</p>
 </a>
-<a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
+{/* <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
     <p>Explore hosting resources</p>
 </a>
 <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
@@ -78,13 +78,13 @@ const Footer = () => {
 </a>
 <a href="https://journey-cusine-git-master-skmirajulislams-projects.vercel.app/host/homes">
     <p>Motel friendly apartments</p>
-</a>
+</a> */}
         </div>
       </section>
       <hr className="bg-[#f7f7f7] mt-10 mb-6" />
       <section className=" flex flex-row flex-wrap justify-between gap-10 px-10 max-w-screen-2xl mx-auto">
         <div className=" flex flex-row flex-wrap items-center">
-          <p>© 2024 Journey Cuisine, Inc.</p>
+          <p>© 2025 Hotel Akkor, Inc.</p>
           <span className=" p-3">·</span>
           <p>Terms</p>
           <span className=" p-3">·</span>
@@ -97,7 +97,7 @@ const Footer = () => {
           <a href="https://www.facebook.com">
             <img src={facebookIcon} alt="Facebook" className=" w-6" />
           </a>
-          <a href="https://www.linkedin.com/in/sk-mirajul-islam-876438261/">
+          <a href="https://www.linkedin.com/in/fanta-doumbia-167b75230">
             <img src={linkedinIcon} alt="Linkedin" className=" w-6" />
           </a>
         </div>
