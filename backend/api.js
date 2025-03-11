@@ -44,8 +44,12 @@ async function main() {
 
     try {
         console.log("📌 Début de la connexion à MongoDB...");
-        await mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tkzvadc.mongodb.net/motel-develpoment-db`);
-        console.log("✅ Connexion à MongoDB réussie !");
+        const MONGO_URI = process.env.NODE_ENV === "test" ? process.env.MONGO_TEST_URI : 
+        `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tkzvadc.mongodb.net/motel-develpoment-db`;
+    
+        console.log("🔍 Connexion MongoDB à :", MONGO_URI);
+        
+        await mongoose.connect(MONGO_URI);
         
         if (process.env.NODE_ENV !== "test") {
             const PORT = process.env.PORT || 5001;
