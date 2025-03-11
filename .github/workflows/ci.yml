@@ -31,7 +31,8 @@ jobs:
         run: |
           echo "STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}" >> $GITHUB_ENV
           echo "DB_USER=${{ secrets.DB_USER }}" >> $GITHUB_ENV
-          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV    
+          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV
+          echo "MONGO_TEST_URI=${{ secrets.MONGO_TEST_URI }}" >> $GITHUB_ENV    
 
       - name: Run backend tests
         run: |
