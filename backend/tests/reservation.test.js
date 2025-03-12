@@ -16,13 +16,13 @@ const testUser = {
 
 // Il faut changer les information de la reservation apres chaque test de reservation
 const testReservation = {
-    listingId: "65ff134d008aeaef24ab75b6",
+    listingId: "66016a81a046e25504beaae3",
     authorId: "", // Sera défini après la création de l'utilisateur
     guestNumber: 2,
     checkIn: "2025-04-10",
     checkOut: "2025-04-15",
     nightStaying: 5,
-    orderId: 9286318876
+    orderId: 1875521123
 };
 
 beforeAll(async () => {
