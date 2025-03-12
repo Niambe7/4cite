@@ -1,32 +1,26 @@
-# Welcome to the JC Travels Solution 🎓
+**Akkor Hotel Online Reservation**  
+Explore the repository: [https://github.com/Niambe7/4cite](https://github.com/Niambe7/4cite)  
 
-🌐 Explore, Book, Enjoy - Your Ultimate Hotel Booking Solution
+**Akkor Hotel** is a MERN stack-based online reservation platform inspired by Airbnb, allowing users to book stays or host properties. Key features include:  
+- **User Roles**: Travelers can book hotels, while hosts can create and manage listings.  
+- **Leaflet Maps**: For interactive property location visualization.  
+- **MongoDB**: Ensures secure data storage for users, listings, and bookings.  
+- **Personalized Dashboard**: Manage reservations, listings, and profiles seamlessly.  
+ 
 
-Welcome to the GitHub repository for our Hotel Booking MERN application! This comprehensive project showcases the power and versatility of the MERN stack, providing a seamless experience for users to discover, book, and enjoy their stay at fantastic hotels. this hotel booking web application built using MERN stack. Motel : A hotel booking web application. I took inspiration from airbnb design and tried to recreate a hotel booking web app using MERN stack. I took it beyond from just a hotel booking app to able to host a house/hotel also. Simplifying user interactivity and making the app seamless both book a hotel and host a hotel was the key goal of this project.
+## Features:  
 
-its A hotel booking management platform for the travellers. I led end to end design and development, utilizing technologies like React, redux, react Router Dom, leaflet maps, react elastic carousel, react-hook-form, react icons, react hot toast and more.
+**User-Friendly Interface:** Sleek, intuitive design for seamless navigation and effortless accommodation discovery.  
 
-🗺️ Spatial Awareness with Leaflet Maps: Used Leaflet Maps API to provide geographical insights, enhanching user interaction and hotels/listings locations understanding.
+**Real-Time Booking:** Instant confirmation for hassle-free hotel reservations.  
 
-💾 Data Integrity with MongoDB: Implemented MongoDB for reliable database backend, securing user data, hotels/listing data, transactions.
+**Secure Payments:** Integrated payment gateways for safe and reliable transactions.  
 
-👤 Personalized User Interaction: Enabled user registration, login, and hotel/listing management such as reservations and hosting hotels. Based on user role user can create a list or reserve a place. All of user listing/reservations can be controlled from personalized dashboard.
+**Responsive Design:** Optimized for a consistent experience across all devices.  
 
-## Features:
+**Admin Dashboard:** Powerful tools for managing hotels, bookings, and user data efficiently.  
 
-**User-friendly Interface:** A sleek and intuitive design that ensures users can easily navigate and find the perfect accommodation.
-
-**Real-time Booking:** Experience the convenience of real-time hotel booking with instant confirmation.
-
-**Secure Payments:** Implementing secure payment gateways for a safe and reliable transaction process.
-
-**Responsive Design:** Ensuring a consistent and delightful experience across various devices.
-
-**Admin Dashboard:** Empowering administrators with tools to manage hotels, bookings, and user data efficiently.
-
-
-
-## 🖥️ Tech Stack :
+ **Tech Stack** :
 
 **Frontend:** React, Redux, TailwindCSS, Tanstack query, Axios, React-hook-form, Vite
 
@@ -37,41 +31,19 @@ its A hotel booking management platform for the travellers. I led end to end des
 **Dependencies:** React icons, React elastic carousel, Leaflet Maps, Country-state-city, React-hot-toast, React-spinners, Recharts
 
 
-Live version : Not available right now. But deployed link is published very soon.
-
 
 ## Usage
 
 **For cloning** 
 ```
- git clone https://github.com/skmirajulislam/JourneyCusine.git
+ git clone https://github.com/Niambe7/4cite.git
 ```
 
-Inside JourneyCusine
+Inside 4cite if you don't have the dependencies here are the commandes for the frontedn:
 ```js
- npm install
-```
-```js
+cd frontend
+ npm install 
+ npm install react-scripts --save-dev 
+ npm test
  npm run dev
 ```
-
-
-## contributors
-
-A heartfelt thank you to all the amazing contributors who have poured their time, expertise, and passion into making the JC project a success. Your dedication and hard work have truly elevated the project to new heights..
-
-Thank you, JC contributors, for your hard work, dedication, and for being an integral part of this incredible community.
-
-Keep coding brilliantly!
-
-[Sk Mirajul islam]
-[Susshrita Jana]
-[Aishiki Mondal]
-
-## License
-
-- [MIT](https://github.com/skmirajulislam/Majorproject.github.io/blob/master/LICENSE-MIT)
-- [Mozilla Public License 2.0](https://github.com/skmirajulislam/Majorproject.github.io/blob/master/LICENSE)
-
-
-
