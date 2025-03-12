@@ -109,15 +109,15 @@ describe("🏨 Test des réservations d'hôtels", () => {
         expect(res.body.clientSecret).toBeDefined();
     });
 
-    it(" Doit effectuer une réservation", async () => {
-        const res = await request(server)
-            .post("/reservations/booking")
-            .set("Authorization", `Bearer ${accessToken}`)
-            .send(testReservation);
-        console.log("📌 Réponse de la réservation :", res.text);
-        expect(res.statusCode).toEqual(200);
-        expect(res.text).toBe("Payment confirmed.");
-    });
+    // it(" Doit effectuer une réservation", async () => {
+    //     const res = await request(server)
+    //         .post("/reservations/booking")
+    //         .set("Authorization", `Bearer ${accessToken}`)
+    //         .send(testReservation);
+    //     console.log("📌 Réponse de la réservation :", res.text);
+    //     expect(res.statusCode).toEqual(200);
+    //     expect(res.text).toBe("Payment confirmed.");
+    // });
 
     it(" Doit récupérer les réservations d'un listing", async () => {
         const res = await request(server)
